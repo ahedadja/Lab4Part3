@@ -218,6 +218,7 @@ function setComment($id) {
 
     success: function (data) {
       alert("New comment has been added.");
+
       //on success
       //reactive HTML that depends on the contents od the returned data
       comment = "";
@@ -349,3 +350,8 @@ $("#exampleModal").on("show.bs.modal", function (event) {
       setComment(recipient);
     });
 });
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
